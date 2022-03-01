@@ -1,9 +1,10 @@
-Lab01
+## Lab01
 
 Скачиваем библиотеку boost:
-	$ wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz
 
-	pic-1
+`wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz`
+
+![This is an image](/assets/images/Pic-1.png)
 
 Разархивируем:
 	
