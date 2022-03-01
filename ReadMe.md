@@ -61,7 +61,5 @@
 	
 10 самых тяжелых(***Задание11***):
 
-`find ~/boost-libs -type f -exec du -h {} +|sort -rh | head -n 10`
-	
-![Pic-9](Pic-9.png)
+`ls -lS`
 	
