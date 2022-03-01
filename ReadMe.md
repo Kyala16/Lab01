@@ -1,57 +1,67 @@
 ## Lab01
 
-Скачиваем библиотеку boost:
+Скачиваем библиотеку boost(***Задание1***):
 
 `wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz`
 
 ![Pic-1](Pic-1.png)
 
-Разархивируем:
+Разархивируем(***Задание2***):
 	
-	pic-2
+`tar -xvf boost_1_69_0.tar.gz`	
 	
-Считаем количество не включая вложенные директории:
-	tree ~/boost_1_69_0 -L 1
+![Pic-2](Pic-2.png)
 	
-	pic-3
+Считаем количество не включая вложенные директории(***Задание3***):
+
+`tree ~/boost_1_69_0 -L 1`
 	
-Считаем Включая вложенные:
-	tree ~/boost_1_69_0
+![Pic-3](Pic-3.png)
 	
-	pic-4
+Считаем Включая вложенные(***Задание4***):
+
+`tree ~/boost_1_69_0`
 	
-Считаем файлы:
-	-.cpp  13774
-	-.h  296
-	-.hpp  14912
+![Pic-4](Pic-4.png)
 	
-	-остаьные  37847
+Считаем файлы(***Задание5***):
+
+`find ~/boost_1_69_0 -name "*.cpp" | wc -l`
+
+	1).cpp  13774
+	2).h  296
+	3).hpp  14912
 	
-	find ~/boost_1_69_0 -name "*.cpp" | wc -l
+	4)остаьные  37847
 	
-	pic-5
 	
-Пути к any.hpp
-	find ~/boost_1_69_0 -name "any.hpp"
+![Pic-5](Pic-5.png)
 	
-	pic-6
+Пути к any.hpp(***Задание6***):
+
+`find ~/boost_1_69_0 -name "any.hpp"`
 	
-Где есть какая-то часть текста:
-	find ~/boost_1_69_0 -type f | xargs grep -i boost::asio
+![Pic-6](Pic-6.png)
 	
-Переносим в другую директорию:
-	mv * ~/boost-libs
+Где есть какая-то часть текста(***Задание7***):
+
+`find ~/boost_1_69_0 -type f | xargs grep -i boost::asio`
 	
-	pic-7
+Переносим в другую директорию(***Задание9***):
+
+`mv * ~/boost-libs`
 	
-Смотрим вес файлов:
-	ncdu ~/boost-libs
+![Pic-7](Pic-7.png)
 	
-	pic-8
+Смотрим вес файлов(***Задание10***):
+
+`ncdu ~/boost-libs`
 	
-10 самых тяжелых:
-	find ~/boost-libs -type f -exec du -h {} +|sort -rh | head -n 10
+![Pic-8](Pic-8.png)
 	
-	pic-9
+10 самых тяжелых(***Задание11***):
+
+`find ~/boost-libs -type f -exec du -h {} +|sort -rh | head -n 10`
 	
-Лабораторная 01 завершина, мною были изучены новые для меня утилиты ОС linux
+![Pic-9](Pic-9.png)
+	
