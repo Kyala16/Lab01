@@ -4,7 +4,7 @@
 
 `wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz`
 
-![Pic-1](акт 3.png)
+![Pic-1](Pic-1.png)
 
 Разархивируем(***Задание2***):
 	
